@@ -1,0 +1,8 @@
+name: "Comment action"
+on:
+  issue_comment:
+    types: created
+jobs:
+  issue_commented:
+    steps:
+      - run: echo "Issue commented:" ${{ github.event.issue.number }}
