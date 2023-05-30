@@ -4,5 +4,6 @@ on:
     types: created
 jobs:
   issue_commented:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Issue commented:" ${{ github.event.issue.number }}
